@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MatchUp — Mes Matches</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/matches.css" />
+</head>
+<body>
+
+  <header class="header">
+    <img src="../img/MatchUp.png" alt="MatchUp" class="header-logo" />
+    <div class="header-right">
+      <a href="swipe.html" class="btn-back">← Swiper</a>
+      <button id="btn-logout" class="btn-logout">Déconnexion</button>
+    </div>
+  </header>
+
+  <main class="matches-page">
+
+    <div class="matches-header">
+      <h1>Mes Matches <span>🎉</span></h1>
+      <p>Les entreprises qui t'ont matché</p>
+      <span id="matches-count" class="matches-count hidden"></span>
+    </div>
+
+    <div id="matches-container" class="matches-grid"></div>
+
+    <div id="empty-state" class="empty-state hidden">
+      <span class="empty-icon">💔</span>
+      <h3>Pas encore de match</h3>
+      <p>Continue à swiper pour trouver ton alternance !</p>
+      <a href="swipe.html" class="btn-swipe">Swiper des offres</a>
+    </div>
+
+  </main>
+
+  <script src="../js/matches.js"></script>
+</body>
+</html>

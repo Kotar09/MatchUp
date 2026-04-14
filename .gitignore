@@ -1,0 +1,41 @@
+# ======================
+# BACKEND (Node.js)
+# ======================
+backend/node_modules/
+backend/package-lock.json
+backend/npm-debug.log
+
+# ENV (⚠️ sensible)
+backend/.env
+extractor/.env
+
+# ======================
+# PYTHON
+# ======================
+extractor/__pycache__/
+extractor/*.pyc
+
+# ======================
+# FICHIERS TEMPORAIRES (PDF)
+# ======================
+backend/uploads/
+extractor/input/
+
+
+# ======================
+# OS
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# IDE
+# ======================
+.vscode/
+.idea/
+
+# ======================
+# LOGS
+# ======================
+*.log
+logs/

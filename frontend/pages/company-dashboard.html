@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MatchUp — Dashboard Entreprise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/company-dashboard.css" />
+</head>
+<body>
+
+  <header class="header">
+    <img src="../img/MatchUp.png" alt="MatchUp" class="header-logo" />
+    <div class="header-right">
+       <a href="company-swipe.html" class="btn-swipe-students">👤 Swiper les étudiants</a> <!-- ← ajoute -->
+      <span id="company-label" class="company-label">🏢 Mon entreprise</span>
+      <button id="btn-logout" class="btn-logout">Déconnexion</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+
+    <!-- WELCOME -->
+    <section class="welcome">
+      <div class="welcome-text">
+        <h1>Bonjour <span id="company-name">!</span> 👋</h1>
+        <p>Gérez vos offres et trouvez vos futurs alternants.</p>
+      </div>
+    </section>
+
+    <!-- CARDS STATS -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">📄</span>
+        <div>
+          <strong id="offers-count">0</strong>
+          <p>Offres publiées</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">♥</span>
+        <div>
+          <strong>—</strong>
+          <p>Candidatures reçues</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🎯</span>
+        <div>
+          <strong>—</strong>
+          <p>Matches</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- UPLOAD OFFRE -->
+    <section class="upload-section">
+      <div class="upload-header">
+        <h2>Publier une offre</h2>
+        <p>Déposez votre fiche de poste en PDF — on s'occupe du reste</p>
+      </div>
+
+      <div class="upload-zone" id="upload-zone">
+        <div class="upload-icon">📄</div>
+        <p class="upload-title">Glissez votre PDF ici</p>
+        <p class="upload-sub">ou</p>
+        <label for="pdf-input" class="btn-upload">Choisir un fichier</label>
+        <input type="file" id="pdf-input" accept=".pdf" hidden />
+        <p class="upload-hint">Formats acceptés : PDF uniquement</p>
+      </div>
+
+      <div id="upload-preview" class="upload-preview hidden">
+        <div class="preview-file">
+          <span class="preview-icon">📄</span>
+          <div class="preview-info">
+            <p id="file-name" class="file-name"></p>
+            <p id="file-size" class="file-size"></p>
+          </div>
+          <button id="btn-remove" class="btn-remove">✕</button>
+        </div>
+        <button id="btn-send" class="btn-send">
+          Envoyer l'offre →
+        </button>
+      </div>
+
+      <div id="upload-success" class="upload-success hidden">
+        <span>✅</span>
+        <p>Offre envoyée ! Elle sera traitée et publiée sous peu.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="../js/company-dashboard.js"></script>
+</body>
+</html>

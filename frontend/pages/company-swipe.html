@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MatchUp — Swiper les étudiants</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/company-swipe.css" />
+</head>
+<body>
+
+  <header class="swipe-header">
+    <img src="../img/MatchUp.png" alt="MatchUp" class="swipe-logo" />
+    <div class="header-right">
+      <a href="company-dashboard.html" class="btn-back">← Dashboard</a>
+      <button id="btn-logout" class="btn-logout">Déconnexion</button>
+    </div>
+  </header>
+
+  <main class="swipe-main">
+
+    <div id="card-container">
+
+      <div id="card" class="card">
+        <div class="card-top">
+          <div class="student-avatar" id="student-avatar">👤</div>
+          <div class="card-badges">
+            <span id="student-name" class="name-badge"></span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <h2 id="student-title"></h2>
+          <p id="student-education" class="education">🎓 <span></span></p>
+        </div>
+
+        <div class="card-divider"></div>
+
+        <div class="card-footer">
+          <p class="skills-label">Compétences</p>
+          <div id="skills" class="skills"></div>
+        </div>
+
+        <div class="overlay-like">RECRUTER ✓</div>
+        <div class="overlay-dislike">PASSER ✕</div>
+      </div>
+
+      <div id="no-more" class="no-more hidden">
+        <div class="no-more-icon">🎉</div>
+        <h3>C'est tout pour aujourd'hui !</h3>
+        <p>Tu as vu tous les profils disponibles.</p>
+        <button id="btn-reset" class="btn-reset-big">Recommencer</button>
+      </div>
+
+    </div>
+
+    <div class="swipe-buttons">
+      <button id="btn-dislike" class="btn-dislike" title="Passer">✕</button>
+      <div class="swipe-hint">Glisse ou clique</div>
+      <button id="btn-like" class="btn-like" title="Recruter">♥</button>
+    </div>
+
+  </main>
+
+  <script src="../js/company-swipe.js"></script>
+</body>
+</html>

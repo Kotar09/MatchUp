@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JobSwipe — Connexion</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    
+    <img src="../img/MatchUp.png" alt="MatchUp Logo" class="header-logo" />
+    <a href="../pages/student.html" class="btn-login">Pas encore de compte ? S'inscrire</a>
+  </header>
+
+  <main class="form-page">
+    <h2>Connexion</h2>
+    <p class="subtitle">Bon retour parmi nous !</p>
+
+    <div class="form-card">
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="ton@email.com" />
+      </div>
+
+      <div class="form-group">
+        <label>Mot de passe</label>
+        <input type="password" id="password" placeholder="••••••••" />
+      </div>
+
+      <button id="btn-submit" class="btn-submit">Se connecter</button>
+      <p id="error-msg" class="error-msg hidden"></p>
+
+    </div>
+  </main>
+
+  <script src="../js/login.js"></script>
+</body>
+</html>

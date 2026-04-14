@@ -1,0 +1,23 @@
+{
+  "titre_poste": "Alternance SDR / Chargé(e) de Développement Commercial",
+  "entreprise": "Cléone",
+  "localisation": {
+    "ville": "Paris",
+    "departement": "75"
+  },
+  "type_contrat": "Alternance",
+  "salaire": null,
+  "secteur_activite": "Développement personnel / Formation / RH",
+  "niveau_etudes": null,
+  "competences_cles": [
+    "Prospection sur LinkedIn et Google",
+    "Gestion CRM (HubSpot)",
+    "Prise de rendez-vous par call et mail",
+    "Accompagnement des commerciaux en rendez-vous clients",
+    "Esprit entrepreneurial",
+    "Proactivité, curiosité, créativité",
+    "Rigueur et organisation"
+  ],
+  "lien_offre": "https://www.welcometothejungle.com/fr/companies/cleone/jobs/sdr-charge-de-developpement-commercial-alternance_paris",
+  "contact_email": null
+}

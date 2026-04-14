@@ -1,0 +1,25 @@
+{
+  "titre_poste": "Chargé(e) de Communication Digitale en Alternance",
+  "entreprise": "H&A Location",
+  "localisation": {
+    "ville": "Bordeaux",
+    "departement": "33"
+  },
+  "type_contrat": "Alternance",
+  "salaire": null,
+  "secteur_activite": "Gestion opérationnelle de barriques / Secteur vinicole international",
+  "niveau_etudes": "BAC+3 à BAC+5 en communication marketing digital",
+  "competences_cles": [
+    "Gestion réseaux sociaux et calendrier éditorial",
+    "Rédaction et mise en page e-mailing, newsletters",
+    "Gestion et mise à jour site internet (WordPress)",
+    "SEO (mots-clés, performances techniques, contenus optimisés)",
+    "Création visuels (Canva, Photoshop, Illustrator, Première Pro)",
+    "Outils mailing (Brevo, Mailchimp, HubSpot)",
+    "Analyse des performances digitales",
+    "Anglais requis (espagnol ou italien en plus)",
+    "Première expérience requise"
+  ],
+  "lien_offre": null,
+  "contact_email": "weronika.casteja@halocation.fr"
+}

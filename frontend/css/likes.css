@@ -1,0 +1,264 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #B71C1C;
+  --red-dark: #8B0000;
+  --red-light: #FDECEA;
+  --white: #FFFFFF;
+  --font: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background: #f7f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =====================
+   HEADER
+===================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2.5rem;
+  background: #a20000;
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.header-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  
+}
+
+.btn-back {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.4);
+  padding: 8px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.btn-back:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+/* =====================
+   PAGE
+===================== */
+.likes-page {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.likes-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.likes-header h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--red);
+  letter-spacing: -0.5px;
+}
+
+.likes-header p {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 0.4rem;
+}
+
+.likes-count {
+  display: inline-block;
+  background: var(--red-light);
+  color: var(--red);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-top: 0.6rem;
+}
+
+/* =====================
+   GRID
+===================== */
+.likes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 960px;
+}
+
+/* =====================
+   CARD
+===================== */
+.like-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  box-shadow: 0 4px 20px rgba(183,28,28,0.08);
+  border: 1px solid rgba(183,28,28,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.like-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--red);
+  border-radius: 4px 0 0 4px;
+}
+
+.like-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(183,28,28,0.15);
+}
+
+.like-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.like-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.company-badge {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--red);
+  background: var(--red-light);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.contract-badge {
+  font-size: 0.78rem;
+  color: #666;
+  background: #f5f5f5;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.like-heart {
+  font-size: 1.1rem;
+  color: var(--red);
+  flex-shrink: 0;
+}
+
+.like-card h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.location {
+  font-size: 0.82rem;
+  color: #999;
+  font-weight: 500;
+}
+
+/* =====================
+   SKILLS
+===================== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 0.2rem;
+}
+
+.skill-tag {
+  font-size: 0.74rem;
+  background: var(--red-light);
+  color: var(--red);
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+/* =====================
+   EMPTY STATE
+===================== */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.empty-state .empty-icon {
+  font-size: 3.5rem;
+}
+
+.empty-state h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.empty-state p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.btn-swipe {
+  background: var(--red);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: all 0.25s;
+  box-shadow: 0 4px 16px rgba(183,28,28,0.3);
+}
+
+.btn-swipe:hover {
+  background: var(--red-dark);
+  transform: translateY(-2px);
+}
+
+.hidden {
+  display: none !important;
+}

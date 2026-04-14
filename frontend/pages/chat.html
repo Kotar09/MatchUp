@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MatchUp — Chat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/chat.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-left">
+      <a href="matches.html" class="btn-back">←</a>
+      <div class="chat-with">
+        <div class="chat-avatar">🏢</div>
+        <div>
+          <p id="chat-name" class="chat-name"></p>
+          <p class="chat-status">En ligne</p>
+        </div>
+      </div>
+    </div>
+    <img src="../img/MatchUp.png" alt="MatchUp" class="header-logo" />
+  </header>
+
+  <main class="chat-main">
+    <div id="messages-container" class="messages-container"></div>
+  </main>
+
+  <footer class="chat-footer">
+    <input 
+      type="text" 
+      id="message-input" 
+      placeholder="Écris un message..." 
+      autocomplete="off"
+    />
+    <button id="btn-send">➤</button>
+  </footer>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="../js/chat.js"></script>
+</body>
+</html>

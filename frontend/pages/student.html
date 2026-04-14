@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JobSwipe — Profil Étudiant</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+     <img src="../img/MatchUp.png" alt="MatchUp Logo" class="header-logo" />
+    <a href="../pages/login.html" class="btn-login">Déjà un compte ? Connexion</a>
+  </header>
+
+  <main class="form-page">
+    <h2>Crée ton profil</h2>
+    <p class="subtitle">Quelques infos pour trouver ton alternance</p>
+
+    <div class="form-card">
+
+      <div class="form-group">
+        <label>Nom complet</label>
+        <input type="text" id="name" placeholder="Ex : Thomas Dupont" />
+      </div>
+
+      <div class="form-group">
+        <label>Titre / Poste recherché</label>
+        <input type="text" id="title" placeholder="Ex : Alternance Marketing Digital" />
+      </div>
+
+      <div class="form-group">
+        <label>Compétences</label>
+        <input type="text" id="skills" placeholder="Ex : React, Figma, Python..." />
+        <span class="hint">Sépare par des virgules</span>
+      </div>
+
+      <div class="form-group">
+        <label>Formation</label>
+        <input type="text" id="education" placeholder="Ex : Bachelor Marketing - ESGI Paris" />
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="ton@email.com" />
+      </div>
+
+      <div class="form-group">
+        <label>Mot de passe</label>
+        <input type="password" id="password" placeholder="••••••••" />
+      </div>
+
+      <button id="btn-submit" class="btn-submit">Créer mon profil</button>
+      <p id="error-msg" class="error-msg hidden"></p>
+
+    </div>
+  </main>
+
+  <script src="../js/student.js"></script>
+</body>
+</html>

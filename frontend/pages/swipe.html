@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MatchUp — Swipe</title>
+  <link rel="stylesheet" href="../css/swipe.css" />
+</head>
+<body>
+
+  <header class="swipe-header">
+    <img src="../img/MatchUp.png" alt="MatchUp" class="swipe-logo" />
+      <button id="btn-likes" class="btn-likes">♥ Mes likes</button>
+       <button id="btn-matches" class="btn-matches">🎉 Mes matches</button>  
+    <button id="btn-logout" class="btn-logout">Déconnexion</button>
+    
+  </header>
+
+  <main class="swipe-main">
+
+    <div id="card-container">
+
+      <!-- Carte -->
+      <div id="card" class="card">
+        <div class="card-top">
+          <div class="card-badges">
+            <span id="company-name" class="company-badge"></span>
+            <span id="contract-type" class="contract-badge"></span>
+          </div>
+          <div class="card-logo-circle">🏢</div>
+        </div>
+
+        <div class="card-body">
+          <h2 id="title"></h2>
+          <p id="location" class="location">📍 <span></span></p>
+          <p id="secteur" class="card-info"></p>   <!-- ← secteur activité -->
+          <p id="niveau" class="card-info"></p>    <!-- ← niveau études -->
+        </div>
+
+        <div class="card-divider"></div>
+
+        <div class="card-footer">
+          <p class="skills-label">Compétences recherchées</p>
+          <div id="skills" class="skills"></div>
+        </div>
+
+        
+      </div>
+
+      <!-- Plus d'offres -->
+      <div id="no-more" class="no-more hidden">
+        <div class="no-more-icon">🎉</div>
+        <h3>C'est tout pour aujourd'hui !</h3>
+        <p>Tu as vu toutes les offres disponibles.</p>
+        <button id="btn-reset" class="btn-reset-big">Recommencer</button>
+      </div>
+
+    </div>
+
+    <!-- Boutons swipe -->
+    <div class="swipe-buttons">
+      <button id="btn-dislike" class="btn-dislike" title="Passer">✕</button>
+      <div class="swipe-hint">Glisse ou clique</div>
+      <button id="btn-like" class="btn-like" title="J'aime">♥</button>
+    </div>
+
+  </main>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

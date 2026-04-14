@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MatchUp — Espace Entreprise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/company.css" />
+</head>
+<body>
+
+  <header class="header">
+    <img src="../img/MatchUp.png" alt="MatchUp" class="header-logo" />
+    <a href="../pages/login.html" class="btn-login">Déjà un compte ? Connexion</a>
+  </header>
+
+  <main class="company-page">
+
+    <div class="company-left">
+      <div class="left-tag">🏢 Espace Recruteur</div>
+      <h1>Trouvez votre<br/>futur <span>alternant</span><br/>idéal.</h1>
+      <p>Publiez vos offres, swipez les profils et matchez avec les meilleurs talents.</p>
+
+      <div class="left-stats">
+        <div class="left-stat">
+          <strong>800+</strong>
+          <span>Entreprises partenaires</span>
+        </div>
+        <div class="left-stat">
+          <strong>94%</strong>
+          <span>Taux de satisfaction</span>
+        </div>
+      </div>
+
+      <div class="left-features">
+        <div class="feature">
+          <span class="feature-icon">⚡</span>
+          <p>Matching instantané par compétences</p>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🎯</span>
+          <p>Profils qualifiés et vérifiés</p>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">💬</span>
+          <p>Messagerie directe après match</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="company-right">
+      <div class="form-card">
+        <div class="form-card-header">
+          <h2>Créer votre espace</h2>
+          <p>Rejoignez MatchUp en quelques minutes</p>
+        </div>
+
+        <div class="form-group">
+          <label>Nom de l'entreprise</label>
+          <input type="text" id="company-name" placeholder="Ex : Google France" />
+        </div>
+
+        <div class="form-group">
+          <label>Secteur d'activité</label>
+          <input type="text" id="sector" placeholder="Ex : Tech / Marketing / Finance" />
+        </div>
+
+        <div class="form-group">
+          <label>Description</label>
+          <textarea id="description" rows="3" placeholder="Décrivez votre entreprise en quelques mots..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Email professionnel</label>
+          <input type="email" id="email" placeholder="recrutement@entreprise.com" />
+        </div>
+
+        <div class="form-group">
+          <label>Mot de passe</label>
+          <input type="password" id="password" placeholder="••••••••" />
+        </div>
+
+        <button id="btn-submit" class="btn-submit">Créer mon espace recruteur</button>
+        <p id="error-msg" class="error-msg hidden"></p>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="../js/company.js"></script>
+</body>
+</html>

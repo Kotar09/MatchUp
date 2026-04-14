@@ -1,0 +1,25 @@
+{
+  "titre_poste": "Alternance Développement Commercial H/F",
+  "entreprise": "JNPR",
+  "localisation": {
+    "ville": "Marseille",
+    "departement": "13"
+  },
+  "type_contrat": "Alternance (minimum 6 mois)",
+  "salaire": null,
+  "secteur_activite": "Food & Beverage / Spiritueux sans alcool",
+  "niveau_etudes": null,
+  "competences_cles": [
+    "Tournées de prospection terrain",
+    "Organisation de rendez-vous et dégustations clients",
+    "Prise de commandes et suivi clients",
+    "Animations de dégustation",
+    "Participation à des salons professionnels",
+    "Excellent relationnel et capacité de persuasion",
+    "Connaissance région Marseille et alentours",
+    "Permis B obligatoire",
+    "Intérêt pour le secteur Food & Beverage"
+  ],
+  "lien_offre": null,
+  "contact_email": "pierre@jnprspirits.com"
+}

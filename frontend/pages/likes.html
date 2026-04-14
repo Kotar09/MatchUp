@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MatchUp — Mes likes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/likes.css" />
+</head>
+<body>
+
+  <header class="header">
+    <img src="../img/MatchUp.png" alt="MatchUp" class="header-logo" />
+    <a href="../pages/swipe.html" class="btn-back">← Retour</a>
+  </header>
+  <main class="likes-page">
+    <div class="likes-header">
+      <h2>Mes offres likées ♥</h2>
+      <p>Les offres que tu as aimées</p>
+      <span id="likes-count" class="likes-count hidden"></span>
+    </div>
+
+    <div id="likes-container" class="likes-grid"></div>
+
+    <div id="empty-state" class="empty-state hidden">
+      <span class="empty-icon">💔</span>
+      <h3>Aucune offre likée</h3>
+      <p>Tu n'as pas encore liké d'offres !</p>
+      <a href="../pages/swipe.html" class="btn-swipe">Commencer à swiper</a>
+    </div>
+  </main>
+
+  <script src="../js/likes.js"></script>
+</body>
+</html>
