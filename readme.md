@@ -23,7 +23,7 @@ Avant d'installer le projet, assure-toi d'avoir les outils suivants installés :
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/ton-repo/matchup.git
+git clone https://github.com/Kotar09/MatchUp.git
 cd matchup
 ```
 
