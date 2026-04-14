@@ -79,7 +79,7 @@ Crée le fichier `.env` dans `/extractor` :
 ```env
 DB_HOST=localhost
 DB_USER=root
-DB_PASSWORD=ton_mot_de_passe
+DB_PASSWORD=ton mot de passe
 DB_NAME=tinder_job_app
 ```
 
@@ -141,8 +141,8 @@ Ouvre `/frontend/pages/index.html` avec Live Server ou double-clique dessus.
 - ✅ Création de profil (nom, titre, compétences, formation)
 - ✅ Swipe des offres d'alternance (like / dislike)
 - ✅ Drag & drop des cartes + animations feux d'artifice
-- ✅ Page "Mes likes" — offres likées
-- ✅ Page "Mes matches" — entreprises matchées
+- ✅ Page "Mes likes" - offres likées
+- ✅ Page "Mes matches" - entreprises matchées
 - ✅ Chat temps réel avec les entreprises matchées
 
 ### Côté Entreprise
